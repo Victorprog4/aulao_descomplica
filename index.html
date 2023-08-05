@@ -1,141 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="src/style/style.css" />
-    <title>Desafio HTML e CSS</title>
-  </head>
-  <body>
-    <main class="container">
-      <section class="header">
-        <article class="container-filho">
-          <div class="perfil">
-            <img
-              src="src/img/foto-perfil.png"
-              alt="Victor Hugo UX Specialist Design"
-            />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desafio HTML e CSS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/style/style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="container-filho">
+        <div class="perfil">
+          <img src="src/img/foto-perfil.png" alt="Victor Hugo UX Specialist Design" />
+        </div>
+        <div class="descricao">
+          <h1>Victor Hugo</h1>
+          <h3>UX Specialist Design</h3>
+          <address>
+            <span><i class="fa-regular fa-envelope"></i>victorhugo@vitorhugo.tech</span>
+          </address>
+          <div class="icons">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-square-behance"></i>
+            <i class="fa-brands fa-square-github"></i>
           </div>
-          <div class="descricao">
-            <h1>Victor Hugo</h1>
-            <h3>UX Specialist Design</h3>
-            <address>
-              <span
-                ><i class="fa-regular fa-envelope"></i
-                >victorhugo@vitorhugo.tech</span
-              >
-            </address>
-            <div class="icons">
-              <i class="fa-brands fa-linkedin"></i>
-              <i class="fa-brands fa-square-behance"></i>
-              <i class="fa-brands fa-square-github"></i>
-            </div>
-          </div>
-        </article>
-      </section>
+        </div>
+      </div>
+    </header>
 
-      <section class="container-projetos">
-        <h2>Meus projetos</h2>
-        <div class="container-projetos-cards">
-          <div class="projetos">
-            <div class="animate-image">
-              <div class="descricao-projeto">
-                <p>
-                  Projeto desenvolvido durante minha participação numa AgroTech.
-                  O Projeto tem a finalidade de mostrar os produtos vendidos
-                  pela startup.
-                </p>
-                <a
-                  href="https://www.behance.net/gallery/164960751/Web-site-Casa-Verde"
-                  target="_blank"
-                  class="btn-default"
-                  rel="noopener noreferrer"
-                  >Acesse<i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-              <img src="src/img/project-casa-verde.png" alt="projeto casa verde" />
+    <section class="container-projetos">
+      <h2>Meus projetos</h2>
+      <div class="container-projetos-cards">
+        <div class="projetos">
+          <div class="animate-image">
+            <div class="descricao-projeto">
+              <p>
+                Projeto desenvolvido durante minha participação numa AgroTech. O Projeto tem a finalidade de mostrar os produtos vendidos pela startup.
+              </p>
+              <a href="https://www.behance.net/gallery/164960751/Web-site-Casa-Verde" target="_blank" class="btn-default" rel="noopener noreferrer">Acesse<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
-          </div>
-
-          <div class="projetos">
-            <div class="animate-image">
-              <div class="descricao-projeto">
-                <p>
-                  Landing page criada e desenvolvida para uma startup focada na web3. Obtive muito experiência e pude atuar com tecnologias emergentes no mercado.
-                </p>
-                <a
-                  href="https://www.behance.net/gallery/171723495/Crypto-Web3"
-                  target="_blank"
-                  class="btn-default"
-                  rel="noopener noreferrer"
-                  >Acesse<i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-              <img src="src/img/project-crypto.png" alt="projeto casa verde" />
-            </div>
-          </div>
-
-          <div class="projetos">
-            <div class="animate-image">
-              <div class="descricao-projeto">
-                <p>
-                  Jogo desenvolvido durante um curso de VueJS, utilizei axios para fazer a requisição de uma api pública e mostrar as perguntas.
-                </p>
-                <a
-                  href="https://quiz-game-gamma-ashy.vercel.app/"
-                  target="_blank"
-                  class="btn-default"
-                  rel="noopener noreferrer"
-                  >Acesse<i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-              <img src="src/img/project-game.png" alt="projeto casa verde" />
-            </div>
+            <img src="src/img/project-casa-verde.png" alt="projeto casa verde" />
           </div>
         </div>
 
-        <div class="botoes">
-          <a
-            href="src/pdf/currículo-vitorHugo.pdf"
-            target="_blank"
-            class="btn-outline"
-            rel="noopener noreferrer"
-            >Baixar CV<i class="fa-solid fa-cloud-arrow-down"></i
-          ></a>
-          <!--<a
-            href="src/pdf/currículo-vitorHugo.pdf"
-            target="_blank"
-            Download
-            class="btn-outline"
-            rel="noopener noreferrer"
-            >Baixar CV<i class="fa-solid fa-cloud-arrow-down"></i
-          ></a>-->
-          <a
-            href="https://github.com/Victorprog4"
-            target="_blank"
-            class="btn-default"
-            rel="noopener noreferrer"
-            >Mais projetos<i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
+        <div class="projetos">
+          <div class="animate-image">
+            <div class="descricao-projeto">
+              <p>
+                Landing page criada e desenvolvida para uma startup focada na web3. Obtive muita experiência e pude atuar com tecnologias emergentes no mercado.
+              </p>
+              <a href="https://www.behance.net/gallery/171723495/Crypto-Web3" target="_blank" class="btn-default" rel="noopener noreferrer">Acesse<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <img src="src/img/project-crypto.png" alt="projeto casa verde" />
+          </div>
         </div>
-      </section>
-    </main>
 
-    <footer>
-      <p>Criado e desenvolvido por Vitor Hugo</p>
-    </footer>
-  </body>
+        <div class="projetos">
+          <div class="animate-image">
+            <div class="descricao-projeto">
+              <p>
+                Jogo desenvolvido durante um curso de VueJS, utilizei axios para fazer a requisição de uma API pública e mostrar as perguntas.
+              </p>
+              <a href="https://quiz-game-gamma-ashy.vercel.app/" target="_blank" class="btn-default" rel="noopener noreferrer">Acesse<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <img src="src/img/project-game.png" alt="projeto casa verde" />
+          </div>
+        </div>
+      </div>
+
+      <div class="botoes">
+        <a href="src/pdf/currículo-vitorHugo.pdf" target="_blank" class="btn-outline" rel="noopener noreferrer">Baixar CV<i class="fa-solid fa-cloud-arrow-down"></i></a>
+        <!--<a href="src/pdf/currículo-vitorHugo.pdf" target="_blank" Download class="btn-outline" rel="noopener noreferrer">Baixar CV<i class="fa-solid fa-cloud-arrow-down"></i></a>-->
+        <a href="https://github.com/Victorprog4" target="_blank" class="btn-default" rel="noopener noreferrer">Mais projetos<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Criado e desenvolvido por Vitor Hugo</p>
+  </footer>
+</body>
 </html>
