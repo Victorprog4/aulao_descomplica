@@ -1,0 +1,202 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+}
+
+body {
+  max-width: 1024px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: var(--black);
+}
+
+h1,
+h2,
+h3,
+p,
+span,
+a {
+  font-family: "Lato", sans-serif;
+  line-height: auto;
+  text-decoration: none;
+  color: var(--white);
+  margin: 0;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  height: 100%;
+  padding: 88px 38px;
+}
+
+.container .header {
+  display: flex;
+  justify-content: center;
+}
+
+.container .container-filho {
+  display: flex;
+  align-items: center;
+}
+
+.container .container-filho .descricao {
+  display: flex;
+  flex-direction: column;
+  margin-left: 120px;
+  justify-content: center;
+}
+
+.container .container-filho .descricao h1 {
+  font-size: 48px;
+  font-weight: 400;
+  padding-bottom: 24px;
+}
+
+.container .container-filho .descricao h3 {
+  font-size: 24px;
+  font-weight: 300;
+  padding-bottom: 24px;
+}
+
+.container .container-filho .descricao address span {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.container .container-filho .descricao address span i {
+  padding-right: 16px;
+}
+
+.container .container-filho .descricao .icons i {
+  font-size: 56px;
+  color: var(--white);
+  padding-right: 16px;
+  margin-top: 24px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.container .container-filho .descricao .icons i:hover {
+  transform: translateY(-8px) scale(1.05);
+}
+
+.container .container-projetos {
+  margin-top: 88px;
+}
+
+.container .container-projetos h2 {
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.container .container-projetos .container-projetos-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-projetos .projetos {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.container-projetos .botoes {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+
+.projetos .animate-image .descricao-projeto {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 24px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  position: absolute;
+  transform: translateY(320px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.projetos .animate-image:hover .descricao-projeto {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.projetos .animate-image .descricao-projeto p {
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.projetos .animate-image .descricao-projeto a {
+  margin: 16px;
+  max-width: 100px;
+}
+
+.botoes i,
+.descricao-projeto a i {
+  margin-left: 16px;
+}
+.projetos .animate-image {
+  cursor: pointer;
+}
+
+.botoes .btn-default {
+  padding: 12px 36px;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+
+.botoes .btn-outline {
+  padding: 12px 36px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--white);
+  outline: 1px solid var(--white);
+  border-radius: 50px;
+  margin-right: 48px;
+  transition: all 0.3s ease-in-out;
+}
+
+.botoes .btn-outline:hover {
+  outline: none;
+  background-color: var(--white);
+  color: var(--black);
+  transform: translateY(-8px);
+}
+
+.botoes .btn-default:hover {
+  background-color: transparent;
+  outline: 1px solid var(--white);
+  color: var(--white);
+  transform: translateY(-8px);
+}
+
+footer {
+  padding: 36px 0;
+}
+footer p {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
